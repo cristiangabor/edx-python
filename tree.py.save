@@ -1,0 +1,9 @@
+def DSFBinary(root,fcn):
+	stack=[root]
+	while len(stack) > 0:
+		if fcn(stack[0]):
+			return True
+		else:
+			temp=stack.pop(0)
+			if temp.getRightBranch():
+				
